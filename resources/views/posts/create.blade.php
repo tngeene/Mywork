@@ -20,20 +20,25 @@
       </div>
     </header>
 
-<div class = "row">
-    <div class = "col-md-9 col-md-offset-2">
+  
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
         <h1>Create New Post</h1>
         <hr>
-        {!! Form::open(['route' => 'posts.store']) !!}
+        {!! Form::open(['route' => 'posts.store', ]) !!}
            {{form::label('title', 'Title:')}}
-           {{form::text('title', null, array('class' => 'form-control'))}}
-
+           {{form::text('title', null, array('class' => 'form-control','required'=>'','maxlength'=>'255'))}}
+            
            {{form::label('body', "Post Body:")}}
-           {{form::textarea('body', null, array('class'=> 'form-control','placeholder'=>'Type something'))}}
+           {{form::textarea('body', null, array('class'=> 'form-control','placeholder'=>'Type something...'))}}
 
            {{form::submit('Create Post', array('class'=>'btn btn-success btn-lg btn-block','style'=>'margin-top:20px;'))}}
         {!! Form::close() !!}
-    </div>
+      </div>
+      </div>
+      </div>
+    
 
 
 @endsection

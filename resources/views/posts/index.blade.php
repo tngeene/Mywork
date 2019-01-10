@@ -40,6 +40,17 @@
             @endforeach
         </tbody>
     </table>
+    
+    <div class="row">
+      <div class="col-lg-2 col-md-10 mx-auto">
+      <div class="text-center">
+        {!!$posts->links() !!}
+      </div>
+      </div>
+      </div>
+
+    </div>
+
   </div>
   </div>
 

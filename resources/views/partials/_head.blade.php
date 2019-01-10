@@ -1,9 +1,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
-    <meta  content="">name="description" content="">
+    <meta  content=""> <name= "description" content="">
     <meta name="author" content="">
 
-    <title> My Blog @yield('title') </title><!--Changes for each page -->
+    <title> Cruise @yield('title') </title><!--Changes for each page -->
 
     <!-- Bootstrap core CSS -->
     <link href="{{asset('vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
@@ -18,5 +18,5 @@
     <link href="{{asset('css/clean-blog.min.css') }}" rel="stylesheet" />
     
   
-/
+
   

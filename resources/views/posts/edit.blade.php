@@ -6,14 +6,15 @@
    
     <div class="container">
       <div class="row">
-      {!! Form::model($post, ['route' => ['posts.update', $post->id]]) !!}
-        <div class =  "col-md-8 col-md-offset-4">
+      <div class="col-md-8">
+      {!! Form::model($post, ['route' => ['posts.update', $post->id], 'method'=> 'PUT']) !!}
+      
             {{Form::label('title','Title:')}}
             {{ Form::text('title', null, ["class" => 'form-control input-lg']) }}
-            {{Form::label('body','Body:', ['class'=>'form-spacing-top'])}}
+           
+            {{Form::label('body','Body:', ["class" =>'form-spacing-top'])}}
             {{ Form::textarea('body',null,  ["class" => 'form-control']) }}
-            
-        </div>
+      </div>
       <div class= "col-md-4">
         <div class = "well">
           <dl class = "dl-horizontal">
@@ -31,7 +32,7 @@
             {!! Html::linkRoute('posts.show', 'Cancel', array($post->id),array('class'=> 'btn btn-danger btn-block'))  !!}
           </div>
           <div class = "col-sm-6">
-           {!! Html::linkRoute('posts.update', 'Save Changes', array($post->id),array('class'=> 'btn btn-success btn-block'))  !!}
+           {{ Form::submit('save changes',['class'=> 'btn btn-success btn block']) }}
           </div>
 
       </div>
