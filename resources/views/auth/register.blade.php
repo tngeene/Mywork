@@ -22,7 +22,7 @@
             
               {{Form::submit('Register',['class'=>'btn btn-primary btn-block form-spacing-top'])}}
 
-            {!!Form::close() !!}
+               {!!Form::close() !!}
            </div>
         </div>
       </div>
